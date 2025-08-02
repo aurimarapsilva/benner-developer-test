@@ -22,7 +22,7 @@ namespace WpfApp.Services
             }
 
             _filePath = Path.Combine(dataFolderPath, fileName);
-            
+
             InitializeNextId();
         }
 
@@ -43,7 +43,7 @@ namespace WpfApp.Services
         public void Add(T entity)
         {
             var entities = (GetAll()).ToList();
-            
+
             var idProperty = typeof(T).GetProperty("Id");
             if (idProperty != null && idProperty.PropertyType == typeof(int))
             {
@@ -101,7 +101,7 @@ namespace WpfApp.Services
         public T GetById(int id)
         {
             var entities = GetAll();
-            
+
             var idProperty = typeof(T).GetProperty("Id");
             if (idProperty != null && idProperty.PropertyType == typeof(int))
             {
@@ -135,7 +135,7 @@ namespace WpfApp.Services
                     entities.Add(entity);
                 }
             }
-            
+
             SaveAll(entities);
         }
     }

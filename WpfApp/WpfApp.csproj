@@ -176,12 +176,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\home_page.png" />
-    <Resource Include="Images\img_customer.png" />
-    <Resource Include="Images\img_home.png" />
-    <Resource Include="Images\img_order.png" />
-    <Resource Include="Images\img_product.png" />
+    <Resource Include="Images\pessoa_icon.png" />
+    <Resource Include="Images\home_icon.png" />
+    <Resource Include="Images\pedido_icon.png" />
+    <Resource Include="Images\produto_icon.png" />
     <Resource Include="Images\shutdown_def.png" />
     <Resource Include="Images\shutdown_mo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\home_page2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
